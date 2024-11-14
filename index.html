@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rule: Redundant aria Labels</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Redundant aria Labels</h1>
+    <div className="list-item" id="redundantAriaLabels-success-1">
+      <button>Save</button>
+    </div>
+    <div className="list-item" id="redundantAriaLabels-success-2">
+      <button aria-label="Save">💾</button>
+    </div>
+    <div className="list-item" id="redundantAriaLabels-success-3">
+      <input type="text" aria-label="Enter your name" placeholder="Name" />
+    </div>
+    <div className="list-item" id="redundantAriaLabels-success-4">
+      <a href="#" aria-label="Download file">📥</a>
+    </div>
+    <div className="list-item" id="redundantAriaLabels-success-5">
+      <button aria-label="Close">✖</button>
+    </div>
+    <div className="list-item" id="redundantAriaLabels-success-6">
+      <input type="checkbox" aria-label="Agree to terms and conditions" />
+    </div>
+    <div className="list-item" id="redundantAriaLabels-failure-1">
+      <button aria-label="Save">Save</button>
+    </div>
+    <div className="list-item" id="redundantAriaLabels-failure-2">
+      <button aria-label="Submit">Submit</button>
+    </div>
+    <div className="list-item" id="redundantAriaLabels-failure-3">
+      <input type="text" aria-label="Search" placeholder="Search" />
+    </div>
+    <div className="list-item" id="redundantAriaLabels-failure-4">
+      <a href="#" aria-label="Home">Home</a>
+    </div>
+    <div className="list-item" id="redundantAriaLabels-failure-5">
+      <button aria-label="Close">Close</button>
+    </div>
+    <div className="list-item" id="redundantAriaLabels-failure-6">
+      <input
+        type="checkbox"
+        aria-label="Subscribe to newsletter"
+        aria-checked="true"
+      />
+    </div>
+  </body>
+</html>
